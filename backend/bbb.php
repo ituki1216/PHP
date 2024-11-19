@@ -14,11 +14,13 @@ if(!empty($_POST['your_name'])){
   if(isset($_POST['play'])){
     $play = $_POST['play'];
     $random_play = rand(0, 1);
+    $random_play_timer = rand(1, 10);
 
     if($random_play === 0){
       echo '今日はドラゴンクエスト3をプレイしません！明日の為にすやすや寝ます。';
     } elseif ($random_play === 1){
-      echo "今日は思う存分ドラクエをプレイしましょうね！＾＾";
+      echo "今日は思う存分ドラクエをプレイしましょうね！
+            今日のプレイ時間は$random_play_timerです！！;
       }
   }
   ?>
