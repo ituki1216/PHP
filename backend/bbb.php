@@ -17,10 +17,23 @@ if(!empty($_POST['your_name'])){
 
     if($random_play === 0){
       echo '今日はドラゴンクエスト3をプレイしません！明日の為にすやすや寝ます。';
-    }else($random === 1){
-      echo "今日は思う存分ドラクエをプレイしましょうね！＾＾"
+    } elseif ($random_play === 1){
+      echo "今日は思う存分ドラクエをプレイしましょうね！＾＾";
       }
-      endif ?>
+  }
+  
     
-    
+<?php　//修正版
+if (isset($_POST['play'])) {
+    $play = $_POST['play'];  // 'play' ボタンが押された場合
+    $random_play = rand(0, 1);  // 0または1をランダムに生成
+
+    if ($random_play === 0) {
+        echo '今日はドラゴンクエスト3をプレイしません！明日の為にすやすや寝ます。';
+    } elseif ($random_play === 1) {
+        echo "今日は思う存分ドラクエをプレイしましょうね！＾＾";
+    }
+}
+?>
+
     
