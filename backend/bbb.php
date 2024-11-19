@@ -5,5 +5,6 @@ if(!empty($_GET['character'])){ // $characterの中には連想配列が格納�
 }
 
 if(!empty($_POST['your_name'])){
-  
+  $your_name = $_GET['your_name'];
+  echo $your_name;
 ?>
