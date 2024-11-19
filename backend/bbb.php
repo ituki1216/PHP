@@ -21,7 +21,19 @@ if(!empty($_POST['your_name'])){
       echo "今日は思う存分ドラクエをプレイしましょうね！＾＾";
       }
   }
-  
+  ?>
+
+
+
+
+
+
+
+
+
+
+
+
     
 <?php　//修正版
 if (isset($_POST['play'])) {
