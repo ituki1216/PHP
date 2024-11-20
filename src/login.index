@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html lang = “ja”>
+<head>
+<meta charset = “UFT-8”>
+<title>ログインしてみよう</title>
+</head>
+<body>
+<h1>冒険の世界に行くために、ログインをししてください</h1>
+<div class="form-container">
+  <form action="bbb.php" method="POST">
+    <input type="text" name="your_name">
+    <input type="submit" value="名前" placeholder="やまなかいつき">
 
+    <input type="text" name="your_email">
+    <input type="submit" value="メールアドレス" placeholder="aaa@aaa.aaa">
+
+    <input type="password" name="your_password">
+    <input type="submit" value="パスワード">
+  </form>
+</div>
+</body>
+</html>
