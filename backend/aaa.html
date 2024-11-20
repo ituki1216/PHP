@@ -3,12 +3,31 @@
 <head>
 <meta charset = “UFT-8”>
 <title>今日ドラクエするか？しないか？ランダムで決めてみよう!!!</title>
+<style>
+  html, body{
+    height: 100%;
+    display: flex;
+    justyfycontent: center;
+    align-items: center;
+    background-color: blue;
+  .form{
+    width: 100%;
+    max-width: 600%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .h1{
+    text-align: center;
+  }
+</style>
 </head>
 <body>
 <h1>ドラクエするかしないか</h1>
   <p>ランダムに抽選します</p>
-<form action="bbb.php" method="POST">
-  <button type="submit  name="play">ドラクエ今日するかしないかどっちなの？？</button>
-</form>
+<div class="form-container">
+  <form action="bbb.php" method="POST">
+    <button type="submit  name="play">ドラクエ今日するかしないかどっちなの？？</button>
+  </form>
+</div>
 </body>
 </html>
