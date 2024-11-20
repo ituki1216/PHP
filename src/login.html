@@ -12,9 +12,11 @@
     <input type="submit" value="名前" placeholder="やまなかいつき">
 
     <input type="text" name="your_email">
+    <p class="error_message"><?php echo $error_mesage['email']; ?></p>
     <input type="submit" value="メールアドレス" placeholder="aaa@aaa.aaa">
 
     <input type="password" name="your_password">
+    <p class="error_password"><?php echo $error_message['password']; ?></p>
     <input type="submit" value="パスワード">
   </form>
 </div>
